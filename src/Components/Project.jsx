@@ -6,14 +6,15 @@ import ecommerce from "../assets/e-commerce.png";
 import cart from "../assets/cart.png";
 import chat from "../assets/chat.png";
 import gym from "../assets/gym.png";
+import loan from "../assets/loan.png";
 
 const projects = [
   {
-    title: "Todo Application",
-    image: todo,
+    title: "Fast Fincorp – Loan Consultancy Website",
+    image: loan, // Make sure to import or add this image at the top
     description:
-      "A modern todo application built with React and Node.js, featuring real-time updates and a clean interface.",
-    link: "https://todo-app-frontend-sable.vercel.app/",
+      "A professional loan consultancy website built for Fast Fincorp, offering loan application forms, Razorpay payment integration, secure API routes, email notifications, and a modern responsive UI.",
+    link: "https://www.fastfincorp.com",
   },
   {
     title: "E-Commerce Platform",
@@ -42,6 +43,13 @@ const projects = [
     description:
       "A modern gym website showcasing fitness programs, membership plans, and expert trainers to help users achieve their fitness goals.",
     link: "https://gym-website-inky-gamma.vercel.app/",
+  },
+  {
+    title: "Todo Application",
+    image: todo,
+    description:
+      "A modern todo application built with React and Node.js, featuring real-time updates and a clean interface.",
+    link: "https://todo-app-frontend-sable.vercel.app/",
   },
 ];
 
