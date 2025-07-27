@@ -11,6 +11,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,9 +20,10 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/send-email", formData);
-      alert("Message sent successfully!");
+      await axios.post("https://portfolio-1-backend.vercel.app/api/send-email", formData);
       setFormData({ name: "", email: "", message: "" });
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 5000); // Hide message after 5 seconds
     } catch (error) {
       alert("Failed to send message.");
     }
@@ -58,6 +60,11 @@ export default function Contact() {
             Feel free to reach out for collaborations or just a friendly hello
             👋
           </p>
+          {isSubmitted && (
+            <div className="mt-6 p-4 bg-green-600/20 border border-green-500 text-green-200 rounded-lg animate-fade-in">
+              Message sent successfully! I'll get back to you soon. 😊
+            </div>
+          )}
         </div>
 
         <form
