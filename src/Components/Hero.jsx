@@ -49,8 +49,8 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="assets/cv.pdf"
-              download
+              href="./cv.pdf"
+              download="TusharVarshney_CV.pdf"
               className="border border-purple-600 text-white px-6 py-3 rounded-lg text-lg transition text-center"
             >
               Download CV
