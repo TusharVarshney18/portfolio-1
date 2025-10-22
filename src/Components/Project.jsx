@@ -6,16 +6,9 @@ import ecommerce from "../assets/e-commerce.png";
 import cart from "../assets/cart.png";
 import chat from "../assets/chat.png";
 import gym from "../assets/gym.png";
-import loan from "../assets/loan.png";
+import anime from "../assets/anime.png";
 
 const projects = [
-  {
-    title: "Fast Fincorp – Loan Consultancy Website",
-    image: loan, // Make sure to import or add this image at the top
-    description:
-      "A professional loan consultancy website built for Fast Fincorp, offering loan application forms, Razorpay payment integration, secure API routes, email notifications, and a modern responsive UI.",
-    link: "https://www.fastfincorp.com",
-  },
   {
     title: "E-Commerce Platform",
     image: ecommerce,
@@ -23,13 +16,7 @@ const projects = [
       "A full-featured e-commerce platform with user authentication, cart management, and payment integration.",
     link: "https://e-commerce-project-frontend-six.vercel.app/",
   },
-  {
-    title: "Shopping Cart System",
-    image: cart,
-    description:
-      "A dynamic shopping cart system with real-time updates and a smooth user experience.",
-    link: "https://cartpage-theta.vercel.app/",
-  },
+
   {
     title: "Chat Application",
     image: chat,
@@ -50,6 +37,20 @@ const projects = [
     description:
       "A modern todo application built with React and Node.js, featuring real-time updates and a clean interface.",
     link: "https://todo-app-frontend-sable.vercel.app/",
+  },
+  {
+    title: "Anime website",
+    image: anime,
+    description:
+      "A visually engaging anime-themed website built with HTML, CSS and JavaScript, featuring responsive layout and smooth animations.",
+    link: "https://landing-page-tau-flax-36.vercel.app/",
+  },
+  {
+    title: "Shopping Cart System",
+    image: cart,
+    description:
+      "A dynamic shopping cart system with real-time updates and a smooth user experience.",
+    link: "https://cartpage-theta.vercel.app/",
   },
 ];
 
